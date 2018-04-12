@@ -1,17 +1,17 @@
 {
-  "name": "bitcore-wallet-client-dash",
+  "name": "bitcore-wallet-client-gobyte",
   "main": "index.js",
   "version": "2.1.1",
-  "homepage": "https://github.com/dashpay/bitcore-wallet-client-dash",
+  "homepage": "https://github.com/gobytecoin/bitcore-wallet-client-gobyte",
   "authors": ["BitPay Inc"],
-  "description": "Client for bitcore-wallet-service-dash",
+  "description": "Client for bitcore-wallet-service-gobyte",
   "keywords": [
-    "dash",
-    "copay-dash",
+    "gobyte",
+    "copay-gobyte",
     "multisig",
     "wallet",
     "client",
-    "bitcore-dash"
+    "bitcore-gobyte"
   ],
   "ignore": [
     "**/.*",

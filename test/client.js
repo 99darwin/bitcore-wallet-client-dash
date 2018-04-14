@@ -15,10 +15,10 @@ var tingodb = require('tingodb')({
 
 var log = require('../lib/log');
 
-var Bitcore = require('bitcore-lib-dash');
+var Bitcore = require('divicore-lib');
 var BitcorePayPro = require('bitcore-payment-protocol-dash');
 
-var BWS = require('bitcore-wallet-service-dash');
+var BWS = require('bitcore-wallet-service-divi');
 
 var Common = require('../lib/common');
 var Constants = Common.Constants;

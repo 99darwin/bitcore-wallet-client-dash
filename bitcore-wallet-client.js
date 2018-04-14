@@ -39882,13 +39882,13 @@ function removeNetwork(network) {
 addNetwork({
   name: 'livenet',
   alias: 'mainnet',
-  pubkeyhash: 0x4c,
+  pubkeyhash: 30,
   privatekey: 0xcc,
-  scripthash: 0x10,
+  scripthash: 13,
   xpubkey: 0x488b21e,    // 'xpub' (Bitcoin Default)
   xprivkey: 0x488ade4,   // 'xprv' (Bitcoin Default)
   networkMagic: 0xbf0c6bbd,
-  port: 9999,
+  port: 51473,
   dnsSeeds: [
     'dnsseed.darkcoin.io',
     'dnsseed.dashdot.io',
@@ -53695,7 +53695,7 @@ arguments[4][103][0].apply(exports,arguments)
     var objToString = objectProto.toString;
 
     /** Used to restore the original `_` reference in `_.noConflict`. */
-    var oldDash = root._;
+    var oldDivi = root._;
 
     /** Used to detect if a method is native. */
     var reIsNative = RegExp('^' +
@@ -64347,7 +64347,7 @@ arguments[4][103][0].apply(exports,arguments)
      * var lodash = _.noConflict();
      */
     function noConflict() {
-      root._ = oldDash;
+      root._ = oldDivi;
       return this;
     }
 
@@ -84864,7 +84864,7 @@ module.exports = require("./src/preconditions");
     var objectProto = Object.prototype;
 
     /** Used to restore the original `_` reference in `noConflict` */
-    var oldDash = context._;
+    var oldDivi = context._;
 
     /** Used to resolve the internal [[Class]] of values */
     var toString = objectProto.toString;
@@ -90353,7 +90353,7 @@ module.exports = require("./src/preconditions");
      * var lodash = _.noConflict();
      */
     function noConflict() {
-      context._ = oldDash;
+      context._ = oldDivi;
       return this;
     }
 

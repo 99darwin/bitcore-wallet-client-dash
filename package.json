@@ -2,7 +2,7 @@
   "name": "bitcore-wallet-client-divi",
   "description": "Client for bitcore-wallet-service-divi",
   "author": "BitPay Inc",
-  "version": "5.1.5",
+  "version": "5.1.6",
   "license": "MIT",
   "keywords": [
     "dash",

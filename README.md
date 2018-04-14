@@ -1,16 +1,16 @@
 # Bitcore-Divi Wallet Client
 
 [![NPM Package](https://img.shields.io/npm/v/bitcore-wallet-client-divi.svg?style=flat-square)](https://www.npmjs.org/package/bitcore-wallet-client-divi)
-[![Build Status](https://img.shields.io/travis/dashpay/bitcore-wallet-client-divi.svg?branch=master&style=flat-square)](https://travis-ci.org/dashpay/bitcore-wallet-client-divi)
-[![Coverage Status](https://coveralls.io/repos/dashpay/bitcore-wallet-client-divi/badge.svg)](https://coveralls.io/r/dashpay/bitcore-wallet-client-divi)
+[![Build Status](https://img.shields.io/travis/divicoin/bitcore-wallet-client-divi.svg?branch=master&style=flat-square)](https://travis-ci.org/divicoin/bitcore-wallet-client-divi)
+[![Coverage Status](https://coveralls.io/repos/divicoin/bitcore-wallet-client-divi/badge.svg)](https://coveralls.io/r/divicoin/bitcore-wallet-client-divi)
 
-The *official* client library for [bitcore-wallet-service-divi] (https://github.com/dashpay/bitcore-wallet-service-divi).
+The *official* client library for [bitcore-wallet-service-divi] (https://github.com/divicoin/bitcore-wallet-service-divi).
 
 ## Description
 
-This package communicates with BWS [bitcore-divi wallet service](https://github.com/dashpay/bitcore-wallet-service-divi) using the REST API. All REST endpoints are wrapped as simple async methods. All relevant responses from BWS are checked independently by the peers, thus the importance of using this library when talking to a third party BWS instance.
+This package communicates with BWS [bitcore-divi wallet service](https://github.com/divicoin/bitcore-wallet-service-divi) using the REST API. All REST endpoints are wrapped as simple async methods. All relevant responses from BWS are checked independently by the peers, thus the importance of using this library when talking to a third party BWS instance.
 
-See [bitcore-wallet-divi] (https://github.com/dashpay/bitcore-wallet-divi) for a simple CLI wallet implementation that relays on BWS and uses bitcore-wallet-client-divi.
+See [bitcore-wallet-divi] (https://github.com/divicoin/bitcore-wallet-divi) for a simple CLI wallet implementation that relays on BWS and uses bitcore-wallet-client-divi.
 
 ## Get Started
 
@@ -21,7 +21,7 @@ You can start using bitcore-wallet-client-divi in any of these two ways:
 
 ## Example
 
-Start your own local [bitcore-divi wallet service](https://github.com/dashpay/bitcore-wallet-service-divi) instance. In this example we assume you have `bitcore-wallet-service-divi` running on your `localhost:3232`.
+Start your own local [bitcore-divi wallet service](https://github.com/divicoin/bitcore-wallet-service-divi) instance. In this example we assume you have `bitcore-wallet-service-divi` running on your `localhost:3232`.
 
 Then create two files `irene.js` and `tomas.js` with the content below:
 
@@ -785,7 +785,7 @@ Returns exchange rate for the specified currency & timestamp.
 
 **opts.ts**: `Date`, A timestamp to base the rate on (default Date.now()).
 
-**opts.provider**: `String`, A provider of exchange rates (default 'dashpay').
+**opts.provider**: `String`, A provider of exchange rates (default 'divicoin').
 
 **Returns**: `Object`, rates - The exchange rate.
 

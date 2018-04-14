@@ -2,7 +2,7 @@
   "name": "bitcore-wallet-client-divi",
   "main": "index.js",
   "version": "2.1.1",
-  "homepage": "https://github.com/dashpay/bitcore-wallet-client-divi",
+  "homepage": "https://github.com/divicoin/bitcore-wallet-client-divi",
   "authors": ["BitPay Inc"],
   "description": "Client for bitcore-wallet-service-divi",
   "keywords": [

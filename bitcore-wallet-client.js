@@ -28831,7 +28831,7 @@ module.exports = logger;
 var $ = require('preconditions').singleton();
 
 var Bitcore = require('divicore-lib');
-var BitcorePayPro = require('bitcore-payment-protocol-divi');
+var BitcorePayPro = require('divicore-payment-protocol');
 var PayPro = {};
 
 PayPro._nodeRequest = function(opts, cb) {
@@ -29078,7 +29078,7 @@ PayPro.send = function(opts, cb) {
 module.exports = PayPro;
 
 }).call(this,require('_process'),require("buffer").Buffer)
-},{"_process":120,"divicore-lib":204,"bitcore-payment-protocol-divi":311,"buffer":47,"http":156,"https":100,"preconditions":361}],182:[function(require,module,exports){
+},{"_process":120,"divicore-lib":204,"divicore-payment-protocol":311,"buffer":47,"http":156,"https":100,"preconditions":361}],182:[function(require,module,exports){
 var $ = require('preconditions').singleton();
 var _ = require('lodash');
 
@@ -39893,7 +39893,7 @@ addNetwork({
     'dnsseed.darkcoin.io',
     'dnsseed.dashdot.io',
     'dnsseed.masternode.io',
-    'dnsseed.dashpay.io'
+    'dnsseed.divicoin.io'
   ]
 });
 
@@ -72493,7 +72493,7 @@ module.exports={
   "_requiredBy": [
     "/",
     "/bitcore-mnemonic-divi",
-    "/bitcore-payment-protocol-divi",
+    "/divicore-payment-protocol",
     "/bitcore-wallet-service-divi"
   ],
   "_resolved": "https://registry.npmjs.org/divicore-lib/-/divicore-lib-0.14.3.tgz",
@@ -72638,7 +72638,7 @@ module.exports={
   },
   "description": "A pure and powerful JavaScript Divi library.",
   "devDependencies": {
-    "bitcore-build-dash": "github:dashpay/bitcore-build-dash",
+    "bitcore-build-dash": "github:divicoin/bitcore-build-dash",
     "brfs": "^1.2.0",
     "browserify": "latest",
     "chai": "^1.10.0",
@@ -99484,7 +99484,7 @@ module.exports={
     "bip38": "^1.3.0",
     "divicore-lib": "^0.14.3",
     "bitcore-mnemonic-divi": "^1.2.3",
-    "bitcore-payment-protocol-divi": "github:dashpay/bitcore-payment-protocol-divi#master_v1.2.2",
+    "divicore-payment-protocol": "github:divicoin/divicore-payment-protocol#master_v1.2.2",
     "json-stable-stringify": "^1.0.0",
     "lodash": "^3.3.1",
     "preconditions": "^1.0.8",

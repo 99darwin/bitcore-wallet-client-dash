@@ -16,7 +16,7 @@ var tingodb = require('tingodb')({
 var log = require('../lib/log');
 
 var Bitcore = require('divicore-lib');
-var BitcorePayPro = require('bitcore-payment-protocol-dash');
+var BitcorePayPro = require('bitcore-payment-protocol-divi');
 
 var BWS = require('bitcore-wallet-service-divi');
 

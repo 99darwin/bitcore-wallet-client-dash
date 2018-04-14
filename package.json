@@ -5,12 +5,12 @@
   "version": "5.1.6",
   "license": "MIT",
   "keywords": [
-    "dash",
-    "copay-dash",
+    "divi",
+    "copay-divi",
     "multisig",
     "wallet",
     "client",
-    "bitcore-dash",
+    "bitcore-divi",
     "BWS",
     "BWC"
   ],

@@ -6,12 +6,12 @@
   "authors": ["BitPay Inc"],
   "description": "Client for bitcore-wallet-service-divi",
   "keywords": [
-    "dash",
-    "copay-dash",
+    "divi",
+    "copay-divi",
     "multisig",
     "wallet",
     "client",
-    "bitcore-dash"
+    "bitcore-divi"
   ],
   "ignore": [
     "**/.*",

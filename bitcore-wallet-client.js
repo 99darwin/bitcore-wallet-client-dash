@@ -28831,7 +28831,7 @@ module.exports = logger;
 var $ = require('preconditions').singleton();
 
 var Bitcore = require('divicore-lib');
-var BitcorePayPro = require('bitcore-payment-protocol-dash');
+var BitcorePayPro = require('bitcore-payment-protocol-divi');
 var PayPro = {};
 
 PayPro._nodeRequest = function(opts, cb) {
@@ -29078,7 +29078,7 @@ PayPro.send = function(opts, cb) {
 module.exports = PayPro;
 
 }).call(this,require('_process'),require("buffer").Buffer)
-},{"_process":120,"divicore-lib":204,"bitcore-payment-protocol-dash":311,"buffer":47,"http":156,"https":100,"preconditions":361}],182:[function(require,module,exports){
+},{"_process":120,"divicore-lib":204,"bitcore-payment-protocol-divi":311,"buffer":47,"http":156,"https":100,"preconditions":361}],182:[function(require,module,exports){
 var $ = require('preconditions').singleton();
 var _ = require('lodash');
 
@@ -46219,7 +46219,7 @@ var Unit = require('./unit');
  * @example
  * ```javascript
  *
- * var uri = new URI('dash:XsV4GHVKGTjQFvwB7c6mYsGV3Mxf7iser6?amount=1.2');
+ * var uri = new URI('divi:XsV4GHVKGTjQFvwB7c6mYsGV3Mxf7iser6?amount=1.2');
  * console.log(uri.address, uri.amount);
  * ```
  *
@@ -46282,7 +46282,7 @@ URI.fromObject = function fromObject(json) {
  * @example
  * ```javascript
  *
- * var valid = URI.isValid('dash:XsV4GHVKGTjQFvwB7c6mYsGV3Mxf7iser6');
+ * var valid = URI.isValid('divi:XsV4GHVKGTjQFvwB7c6mYsGV3Mxf7iser6');
  * // true
  * ```
  *
@@ -46309,8 +46309,8 @@ URI.isValid = function(arg, knownParams) {
 URI.parse = function(uri) {
   var info = URL.parse(uri, true);
 
-  if (info.protocol !== 'dash:') {
-    throw new TypeError('Invalid dash URI');
+  if (info.protocol !== 'divi:') {
+    throw new TypeError('Invalid divi URI');
   }
 
   // workaround to host insensitiveness
@@ -46334,7 +46334,7 @@ URI.prototype._fromObject = function(obj) {
   /* jshint maxcomplexity: 10 */
 
   if (!Address.isValid(obj.address)) {
-    throw new TypeError('Invalid dash address');
+    throw new TypeError('Invalid divi address');
   }
 
   this.address = new Address(obj.address);
@@ -46404,7 +46404,7 @@ URI.prototype.toString = function() {
   _.extend(query, this.extras);
 
   return URL.format({
-    protocol: 'dash:',
+    protocol: 'divi:',
     host: this.address,
     query: query
   });
@@ -66520,7 +66520,7 @@ module.exports.AES_ROUND_NOKEY_LE = function(X, Y) {
 ///////////////  Blake //////////////
 
 //// Written by Quantum Explorer ////
-////////// Dash Foundation //////////
+////////// Divi Foundation //////////
 /// Released under the MIT License //
 /////////////////////////////////////
 
@@ -66746,7 +66746,7 @@ module.exports = function(input, format, output) {
 //////////////  BMW /////////////////
 
 //// Written by Quantum Explorer ////
-////////// Dash Foundation //////////
+////////// Divi Foundation //////////
 /// Released under the MIT License //
 /////////////////////////////////////
 
@@ -67104,7 +67104,7 @@ module.exports = function(input, format, output) {
 ////////////  Cubehash //////////////
 
 //// Written by Quantum Explorer ////
-////////// Dash Foundation //////////
+////////// Divi Foundation //////////
 /// Released under the MIT License //
 /////////////////////////////////////
 
@@ -67436,7 +67436,7 @@ module.exports = function(input, format, output) {
 ///////////////  Echo ///////////////
 
 //// Written by Quantum Explorer ////
-////////// Dash Foundation //////////
+////////// Divi Foundation //////////
 /// Released under the MIT License //
 /////////////////////////////////////
 
@@ -67723,7 +67723,7 @@ module.exports = function(input, format, output) {
 ////////////  groestl ///////////////
 
 //// Written by Quantum Explorer ////
-////////// Dash Foundation //////////
+////////// Divi Foundation //////////
 /// Released under the MIT License //
 /////////////////////////////////////
 
@@ -69145,7 +69145,7 @@ module.exports.string2Int32Buffer = function (s) {
 ///////////////  Jh /////////////////
 
 //// Written by Quantum Explorer ////
-////////// Dash Foundation //////////
+////////// Divi Foundation //////////
 /// Released under the MIT License //
 /////////////////////////////////////
 
@@ -70146,7 +70146,7 @@ module.exports = methods;
 //////////////  Luffa ///////////////
 
 //// Written by Quantum Explorer ////
-////////// Dash Foundation //////////
+////////// Divi Foundation //////////
 /// Released under the MIT License //
 /////////////////////////////////////
 
@@ -71066,7 +71066,7 @@ module.exports.xORTable = function(d, s1, s2, len) {
 ////////////  Shavite ///////////////
 
 //// Written by Quantum Explorer ////
-////////// Dash Foundation //////////
+////////// Divi Foundation //////////
 /// Released under the MIT License //
 /////////////////////////////////////
 
@@ -71762,7 +71762,7 @@ module.exports = function(input, format, output) {
 //////////////  Simd ///////////////
 
 //// Written by Quantum Explorer ////
-////////// Dash Foundation //////////
+////////// Divi Foundation //////////
 /// Released under the MIT License //
 /////////////////////////////////////
 
@@ -72493,7 +72493,7 @@ module.exports={
   "_requiredBy": [
     "/",
     "/bitcore-mnemonic-divi",
-    "/bitcore-payment-protocol-dash",
+    "/bitcore-payment-protocol-divi",
     "/bitcore-wallet-service-divi"
   ],
   "_resolved": "https://registry.npmjs.org/divicore-lib/-/divicore-lib-0.14.3.tgz",
@@ -72636,7 +72636,7 @@ module.exports={
     "sha512": "=0.0.1",
     "x11-hash-js": "^1.0.0"
   },
-  "description": "A pure and powerful JavaScript Dash library.",
+  "description": "A pure and powerful JavaScript Divi library.",
   "devDependencies": {
     "bitcore-build-dash": "github:dashpay/bitcore-build-dash",
     "brfs": "^1.2.0",
@@ -72653,7 +72653,7 @@ module.exports={
   "gitHead": "570209714dcea77dd306108166d0891ca8736283",
   "homepage": "https://github.com/divicoin/divicore-lib",
   "keywords": [
-    "dash",
+    "divi",
     "transaction",
     "address",
     "p2p",
@@ -99461,12 +99461,12 @@ module.exports={
   "version": "5.1.2",
   "license": "MIT",
   "keywords": [
-    "dash",
-    "copay-dash",
+    "divi",
+    "copay-divi",
     "multisig",
     "wallet",
     "client",
-    "bitcore-dash",
+    "bitcore-divi",
     "BWS",
     "BWC"
   ],
@@ -99484,7 +99484,7 @@ module.exports={
     "bip38": "^1.3.0",
     "divicore-lib": "^0.14.3",
     "bitcore-mnemonic-divi": "^1.2.3",
-    "bitcore-payment-protocol-dash": "github:dashpay/bitcore-payment-protocol-dash#master_v1.2.2",
+    "bitcore-payment-protocol-divi": "github:dashpay/bitcore-payment-protocol-divi#master_v1.2.2",
     "json-stable-stringify": "^1.0.0",
     "lodash": "^3.3.1",
     "preconditions": "^1.0.8",

@@ -25252,7 +25252,7 @@ var util = require('util');
 var async = require('async');
 var events = require('events');
 var Bitcore = require('divicore-lib');
-var Mnemonic = require('bitcore-mnemonic-dash');
+var Mnemonic = require('bitcore-mnemonic-divi');
 var sjcl = require('sjcl');
 var url = require('url');
 var querystring = require('querystring');
@@ -27747,7 +27747,7 @@ API.prototype.createWalletFromOldCopay = function(username, password, blob, cb) 
 module.exports = API;
 
 }).call(this,require("buffer").Buffer)
-},{"../package.json":387,"./common":174,"./credentials":176,"./errors":177,"./log":180,"./paypro":181,"./verifier":182,"async":198,"bip38":203,"divicore-lib":204,"bitcore-mnemonic-dash":300,"buffer":47,"events":84,"json-stable-stringify":348,"lodash":353,"preconditions":361,"querystring":130,"sjcl":378,"superagent":379,"url":162,"util":167}],172:[function(require,module,exports){
+},{"../package.json":387,"./common":174,"./credentials":176,"./errors":177,"./log":180,"./paypro":181,"./verifier":182,"async":198,"bip38":203,"divicore-lib":204,"bitcore-mnemonic-divi":300,"buffer":47,"events":84,"json-stable-stringify":348,"lodash":353,"preconditions":361,"querystring":130,"sjcl":378,"superagent":379,"url":162,"util":167}],172:[function(require,module,exports){
 'use strict';
 
 var Constants = {};
@@ -28067,7 +28067,7 @@ var $ = require('preconditions').singleton();
 var _ = require('lodash');
 
 var Bitcore = require('divicore-lib');
-var Mnemonic = require('bitcore-mnemonic-dash');
+var Mnemonic = require('bitcore-mnemonic-divi');
 var sjcl = require('sjcl');
 
 var Common = require('./common');
@@ -28533,7 +28533,7 @@ Credentials.fromOldCopayWallet = function(w) {
 module.exports = Credentials;
 
 }).call(this,require("buffer").Buffer)
-},{"./common":174,"divicore-lib":204,"bitcore-mnemonic-dash":300,"buffer":47,"lodash":353,"preconditions":361,"sjcl":378}],177:[function(require,module,exports){
+},{"./common":174,"divicore-lib":204,"bitcore-mnemonic-divi":300,"buffer":47,"lodash":353,"preconditions":361,"sjcl":378}],177:[function(require,module,exports){
 'use strict';
 
 var _ = require('lodash');
@@ -72492,7 +72492,7 @@ module.exports={
   },
   "_requiredBy": [
     "/",
-    "/bitcore-mnemonic-dash",
+    "/bitcore-mnemonic-divi",
     "/bitcore-payment-protocol-dash",
     "/bitcore-wallet-service-divi"
   ],
@@ -99483,7 +99483,7 @@ module.exports={
     "async": "^0.9.0",
     "bip38": "^1.3.0",
     "divicore-lib": "^0.14.3",
-    "bitcore-mnemonic-dash": "^1.2.3",
+    "bitcore-mnemonic-divi": "^1.2.3",
     "bitcore-payment-protocol-dash": "github:dashpay/bitcore-payment-protocol-dash#master_v1.2.2",
     "json-stable-stringify": "^1.0.0",
     "lodash": "^3.3.1",

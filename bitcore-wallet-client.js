@@ -39882,9 +39882,9 @@ function removeNetwork(network) {
 addNetwork({
   name: 'livenet',
   alias: 'mainnet',
-  pubkeyhash: 0x30,
-  privatekey: 0xcc,
-  scripthash: 0x13,
+  pubkeyhash: 0x00,
+  privatekey: 0x80,
+  scripthash: 0x05,
   xpubkey: 0x488b21e,    // 'xpub' (Bitcoin Default)
   xprivkey: 0x488ade4,   // 'xprv' (Bitcoin Default)
   networkMagic: 0xbf0c6bbd,
@@ -39906,9 +39906,9 @@ var livenet = get('livenet');
 addNetwork({
   name: 'testnet',
   alias: 'regtest',
-  pubkeyhash: 0x30,       // Testnet divi addresses start with 'x' or 'y'
+  pubkeyhash: 0x6f,       // Testnet divi addresses start with 'x' or 'y'
   privatekey: 0xef,       // Testnet private keys start with '9' or 'c' (Bitcoin defaults)
-  scripthash: 0x13,       // Testnet divi script addresses start with '8' or '9'
+  scripthash: 0xc4,       // Testnet divi script addresses start with '8' or '9'
   xpubkey: 0x43587cf,     // 'tpub' (Bitcoin Default)
   xprivkey: 0x04358394    // 'tprv' (Bitcoin Default)
 });

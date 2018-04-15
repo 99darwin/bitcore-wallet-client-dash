@@ -39882,9 +39882,9 @@ function removeNetwork(network) {
 addNetwork({
   name: 'livenet',
   alias: 'mainnet',
-  pubkeyhash: 30,
+  pubkeyhash: 0x30,
   privatekey: 0xcc,
-  scripthash: 13,
+  scripthash: 0x13,
   xpubkey: 0x488b21e,    // 'xpub' (Bitcoin Default)
   xprivkey: 0x488ade4,   // 'xprv' (Bitcoin Default)
   networkMagic: 0xbf0c6bbd,

@@ -2,7 +2,7 @@
   "name": "bitcore-wallet-client-divi",
   "description": "Client for bitcore-wallet-service-divi",
   "author": "BitPay Inc",
-  "version": "5.2.4",
+  "version": "5.2.5",
   "license": "MIT",
   "keywords": [
     "divi",

@@ -39882,7 +39882,6 @@ function removeNetwork(network) {
 addNetwork({
   name: 'livenet',
   alias: 'mainnet',
-<<<<<<< HEAD
   pubkeyhash: 30,
   privatekey: 0xcc,
   scripthash: 13,
@@ -39895,19 +39894,6 @@ addNetwork({
     'dnsseed.dashdot.io',
     'dnsseed.masternode.io',
     'dnsseed.divicoin.io'
-=======
-  pubkeyhash: 0x32,      // gobyte addresses start with 'M'
-  privatekey: 0x4D,      // gobyte private keys start with 'Y' or 'X'
-  scripthash: 0x49,      // gobyte script addresses start with 'W'
-  xpubkey: 0x488b21e,    // 'xpub' (Bitcoin Default)
-  xprivkey: 0x488ade4,   // 'xprv' (Bitcoin Default)
-  networkMagic: 0xbf0c6bbd,
-  port: 24157,
-  dnsSeeds: [
-    'ariga.gobyte.io',  // Europe Server
-    'dorado.gobyte.io', // ASIA Server
-    'block.gobyte.io'   // Usa Server
->>>>>>> 30c7dfb96db83c6b0add5838b2cdda8bcf81ac21
   ]
 });
 
@@ -53709,11 +53695,7 @@ arguments[4][103][0].apply(exports,arguments)
     var objToString = objectProto.toString;
 
     /** Used to restore the original `_` reference in `_.noConflict`. */
-<<<<<<< HEAD
     var oldDivi = root._;
-=======
-    var oldGobyte = root._;
->>>>>>> 30c7dfb96db83c6b0add5838b2cdda8bcf81ac21
 
     /** Used to detect if a method is native. */
     var reIsNative = RegExp('^' +
@@ -67454,11 +67436,7 @@ module.exports = function(input, format, output) {
 ///////////////  Echo ///////////////
 
 //// Written by Quantum Explorer ////
-<<<<<<< HEAD
 ////////// Divi Foundation //////////
-=======
-////////// Gobyte Team //////////
->>>>>>> 30c7dfb96db83c6b0add5838b2cdda8bcf81ac21
 /// Released under the MIT License //
 /////////////////////////////////////
 
@@ -67745,11 +67723,7 @@ module.exports = function(input, format, output) {
 ////////////  groestl ///////////////
 
 //// Written by Quantum Explorer ////
-<<<<<<< HEAD
 ////////// Divi Foundation //////////
-=======
-////////// Gobyte Team //////////
->>>>>>> 30c7dfb96db83c6b0add5838b2cdda8bcf81ac21
 /// Released under the MIT License //
 /////////////////////////////////////
 
@@ -70172,11 +70146,7 @@ module.exports = methods;
 //////////////  Luffa ///////////////
 
 //// Written by Quantum Explorer ////
-<<<<<<< HEAD
 ////////// Divi Foundation //////////
-=======
-////////// Gobyte Team //////////
->>>>>>> 30c7dfb96db83c6b0add5838b2cdda8bcf81ac21
 /// Released under the MIT License //
 /////////////////////////////////////
 
@@ -71096,11 +71066,7 @@ module.exports.xORTable = function(d, s1, s2, len) {
 ////////////  Shavite ///////////////
 
 //// Written by Quantum Explorer ////
-<<<<<<< HEAD
 ////////// Divi Foundation //////////
-=======
-////////// Gobyte Team //////////
->>>>>>> 30c7dfb96db83c6b0add5838b2cdda8bcf81ac21
 /// Released under the MIT License //
 /////////////////////////////////////
 
@@ -71796,11 +71762,7 @@ module.exports = function(input, format, output) {
 //////////////  Simd ///////////////
 
 //// Written by Quantum Explorer ////
-<<<<<<< HEAD
 ////////// Divi Foundation //////////
-=======
-////////// Gobyte Team //////////
->>>>>>> 30c7dfb96db83c6b0add5838b2cdda8bcf81ac21
 /// Released under the MIT License //
 /////////////////////////////////////
 

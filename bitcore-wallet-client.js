@@ -40222,7 +40222,7 @@ Opcode.map = {
 
   // expansion
   OP_NOP1: 176,
-  OP_NOP2: 177,
+  OP_NOP2: 177
   OP_NOP3: 178,
   OP_NOP4: 179,
   OP_NOP5: 180,

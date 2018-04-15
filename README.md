@@ -785,7 +785,11 @@ Returns exchange rate for the specified currency & timestamp.
 
 **opts.ts**: `Date`, A timestamp to base the rate on (default Date.now()).
 
+<<<<<<< HEAD
 **opts.provider**: `String`, A provider of exchange rates (default 'divicoin').
+=======
+**opts.provider**: `String`, A provider of exchange rates (default 'gobytecoin').
+>>>>>>> 30c7dfb96db83c6b0add5838b2cdda8bcf81ac21
 
 **Returns**: `Object`, rates - The exchange rate.
 

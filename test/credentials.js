@@ -215,7 +215,7 @@ describe('Credentials', function() {
       it('Should create compliant request key from mnemonic', function() {
         var words = "pool stomach bridge series powder mammal betray slogan pass roast neglect reunion";
         var c = Credentials.fromMnemonic('btc', 'livenet', words, '', 0, 'BIP44');
-        c.xPrivKey.should.equal('xprv9s21ZrQH143K3ZMudFRXpEwftifDuJkjLKnCtk26pXhxQuK8bCnytJuUTGkfvaibnCxPQQ9xToUtDAZkJqjm3W62GBXXr7JwhiAz1XWgTUJ');
+        c.xPrivKey.should.equal('xprv9s21ZrQH143K3ZMudFRXpEwftifDuJkjLKnCtk26pXhxQuK8bCnytJuUTGkfvaibnCxPQQ9xToUtDAZkJqjm3W62diviXr7JwhiAz1XWgTUJ');
         c.requestPrivKey.should.equal('7582efa9b71aefa831823592d753704cba9648b810b14b77ee078dfe8b730157');
       });
       it('should accept non-compliant derivation as a parameter when importing', function() {
